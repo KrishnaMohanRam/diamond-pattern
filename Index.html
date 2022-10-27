@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title to the page -->
+    <title>Diamond Pattern</title>
+</head>
+<body>
+    <h2>Diamond Pattern using Javascript</h2>
+    <script type="text/javascript">
+        // outer loop for printing upside pyramid;
+        for (var i=0; i<4; i++){
+            var line= " ";
+            // inner loop to create space;
+            for (var j=4; j>i; j--){
+              line += " ";  
+            }
+            // inner loop for printing stars;
+            for (var k=0; k<=i; k++){
+                line += "*";
+            }
+            // inner loop for printing stars;
+            for (var l=1; l<=i; l++){
+                line += "*";
+            }
+            console.log(line);
+        }
+        // outer loop for printing downside pyramid;
+        for (var i=4; i>=0; i--){
+            var line = " ";
+            // inner loop for printing space
+            for (var j=4; j>i; j--){
+                line += " ";
+            }
+            // inner loop for printing stars;
+            for (var k=0; k<=i; k++){
+                line += "*";
+            }
+            // inner loop for printing stars;
+            for (l=1; l<=i; l++){
+                line += "*";
+            }
+            console.log(line);
+        }
+    </script>
+</body>
+</html>
